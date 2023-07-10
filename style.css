@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    font-size: 16px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #2c2c31;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4c4c4c;
+}
+
+@keyframes startup {
+    0% {opacity: 0;
+    transform: translateY(-125px);}
+
+  
+    100% {opacity: 1;
+    translate: 0px;}
+}
+
+a {
+    color: #BEBEBF;
+    text-decoration: none;
+}
