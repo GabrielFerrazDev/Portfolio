@@ -46,22 +46,24 @@ body {
     height: 100vh;
     margin: 0;
     }  
-  header, footer, main, div {
+header, footer, main, div {
     padding: 1.2rem;
     background: black;
     border: 1px solid white;
     }
 
-  #pageHeader {
+#pageHeader {
     grid-area: header;
     display: flex;
     text-align: center;
     justify-content: center;
     }
-  #pageFooter {
-    grid-area: footer;
+
+    header {
+      background: #4c4c4c;
     }
-  #mainContent { 
+ 
+#mainContent { 
     grid-area: maintext;  
     display: flex;
     flex-direction: column;
@@ -70,7 +72,7 @@ body {
     padding-right: 60%;    
     }
 
-  #sidebar { 
+#sidebar { 
     grid-area: Info; 
     } 
   
@@ -112,6 +114,9 @@ body {
   width: 1.5rem;
  }
 
+#pageFooter {
+  grid-area: footer;
+  }
  footer a {
   color: #F2F2F2;
  }
