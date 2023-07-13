@@ -86,17 +86,20 @@ header, footer, main, div {
  }
 
  #sidebar ul li {
-  display: flex;
   padding: 0.3rem;
+  display: flex;
+  height: 2rem;
+  width: 7rem;
   background-color:  grey;
   margin: 0.5rem;
   border-radius: 6px;
-  justify-content: space-around;
+  justify-content: space-evenly;
  } 
 
 
+
  #sidebar ul li:hover{
-  background: lightslategray;
+  background: lightsteelblue;
   opacity: calc(0.8);
   transform: scale(1.1);
   transition: 0.2s ease-in;  
