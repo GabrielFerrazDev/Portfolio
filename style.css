@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
     --white: #f2f2f2;
     --black: #010101;
     --lightgray: #b5b5b5;
@@ -13,7 +14,7 @@
     --night: #00334e;
     --evening:#003d59;
     --afternoon:#326786;
-    --morning:#a4d9fc;
+    --morning:#a4d9fc; 
 }
 
 :root {
@@ -25,7 +26,7 @@
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--marine);
+    background-color: var(--darkgray);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -55,6 +56,7 @@ body {
     grid-template-columns: 1fr 15%;
     height: 100vh;
     margin: 0;
+    background-image: url(./assets/background1.jpg);
     }  
 header, footer, main, div {
     padding: 1.2rem;
@@ -68,24 +70,23 @@ header, footer, main, div {
     justify-content: center;
     }
 
-    header {
-      background: var(--morning);
-      border-bottom: 1px solid var(--marine);
-    }
     header a {
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        height: 300px;
-        width: 300px;
+        height: 210px;
+        width: 210px;
         border-radius: 50%;
+        background-color: var(--morning);
     }
+
+    /*overflow: hidden para esconder a scale no hover :D*/
     
     header img {
         border-radius: 50%;
-        height: 300px;
-        width: 300px;
+        height: 160px;
+        width: 320px;
         align-self: center;
     }
 
@@ -101,9 +102,8 @@ header, footer, main, div {
     flex-direction: column;
     text-align: left;
     justify-content: flex-start;
-    padding-right: 60%; 
-    background-color: var(--afternoon);   
-    }
+    padding-right: 60%;   
+     }
 
     main {
         display: flex;
@@ -118,8 +118,6 @@ header, footer, main, div {
     }
 #sidebar { 
     grid-area: Info; 
-    background-color: var(--night);
-    border-bottom: 100px solid var(--logogray);
     } 
   
  #sidebar ul {
@@ -165,7 +163,12 @@ header, footer, main, div {
 
 #pageFooter {
   grid-area: footer;
-  background-color: var(--marine);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  text-justify: inter-word;
   }
  footer a {
   color: #F2F2F2;
@@ -173,7 +176,7 @@ header, footer, main, div {
 
  footer a:hover {
   color: var(--lightgray);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   transition: 0.2s ease-in;
  }
 
