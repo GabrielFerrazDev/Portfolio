@@ -51,8 +51,8 @@ body {
     grid-template-areas: 
       "header header"
       "maintext Info"
-      "footer Info";
-    grid-template-rows: 360px 1fr 100px;  
+      "footer footer";
+    grid-template-rows: 360px 1fr 110px;  
     grid-template-columns: 1fr 15%;
     height: 100vh;
     margin: 0;
@@ -129,37 +129,49 @@ header, footer, main, div {
   list-style-type:none;
     }
 
- #sidebar ul li {
-  padding: 0.3rem;
+.links li {
+    padding: 0.3rem;
   display: flex;
   height: 2rem;
   width: 7rem;
   background-color:  var(--morning);
   margin: 0.5rem;
   border-radius: 6px;
-  justify-content: space-evenly;
- } 
+}
+.links img {
+    display: flex;
+    float: left;
+    margin: 0 0.4rem 0;
+    height: 1.5rem;
+    width: 1.5rem;
+   }
 
+.links a {
+    color: var(--marine);
+   }
 
+.links li:hover{
+    background: var(--afternoon);
+    opacity: calc(0.8);
+    transform: scale(1.1);
+    transition: 0.2s ease-in;  
+   } 
 
- #sidebar ul li:hover{
-  background: var(--afternoon);
-  opacity: calc(0.8);
-  transform: scale(1.1);
-  transition: 0.2s ease-in;  
- } 
+.projects li {
+    display: flex;
+    margin: 1rem 0 1rem;
+}
+.projects li:hover {
+    transform: scale(1.25) rotate(015deg);
+    transition: 0.2s ease-in;
+}
 
- #sidebar ul li a {
-  color: var(--marine);
- }
-
- #sidebar img {
-  display: flex;
-  float: right;
-  margin: 0 0.4rem 0;
-  height: 1.5rem;
-  width: 1.5rem;
- }
+#menuButton{
+    width: 9.6rem;
+    height: 3rem;
+    background: var(--morning);
+    border-radius: 8px;
+}
 
 #pageFooter {
   grid-area: footer;
@@ -169,13 +181,14 @@ header, footer, main, div {
   align-items: center;
   text-align: justify;
   text-justify: inter-word;
+  background-color: var(--logogray);
   }
  footer a {
-  color: #F2F2F2;
+  color: var(--white);
  }
 
  footer a:hover {
-  color: var(--lightgray);
+  color: var(--morning);
   font-size: 1.1rem;
   transition: 0.2s ease-in;
  }
