@@ -52,11 +52,12 @@ body {
       "header header"
       "maintext Info"
       "footer footer";
-    grid-template-rows: 360px 1fr 110px;  
+    grid-template-rows: 360px 1fr 90px;  
     grid-template-columns: 1fr 15%;
     height: 100vh;
     margin: 0;
-    background-image: url(./assets/background1.jpg);
+    background: rgb(50,103,134);
+background: linear-gradient(208deg, rgba(50,103,134,1) 0%, rgba(0,51,78,1) 37%, rgba(0,40,67,1) 95%);
     }  
 header, footer, main, div {
     padding: 1.2rem;
@@ -103,6 +104,7 @@ header, footer, main, div {
     text-align: left;
     justify-content: flex-start;
     padding-right: 60%;   
+    margin-left: 2rem;
      }
 
     main {
@@ -118,6 +120,7 @@ header, footer, main, div {
     }
 #sidebar { 
     grid-area: Info; 
+    margin-right: 2rem;
     } 
   
  #sidebar ul {
@@ -179,9 +182,8 @@ header, footer, main, div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: justify;
-  text-justify: inter-word;
-  background-color: var(--logogray);
+  text-align: center;
+  background-color: var(--marine);
   }
  footer a {
   color: var(--white);
@@ -189,8 +191,7 @@ header, footer, main, div {
 
  footer a:hover {
   color: var(--morning);
-  font-size: 1.1rem;
-  transition: 0.2s ease-in;
+  transition: 0.2s linear;
  }
 
 
