@@ -49,16 +49,20 @@ body {
     color: var(--white);
     display: grid;
     grid-template-areas: 
-      "header header"
-      "maintext Info"
-      "footer footer";
+      "header header header"
+      "maintext menu info"
+      "footer footer footer";
     grid-template-rows: 360px 1fr 90px;  
-    grid-template-columns: 1fr 15%;
+    grid-template-columns: 1fr 25% 15%;
     height: 100vh;
     margin: 0;
     background: rgb(50,103,134);
 background: linear-gradient(208deg, rgba(50,103,134,1) 0%, rgba(0,51,78,1) 37%, rgba(0,40,67,1) 95%);
     }  
+
+    /*Criar nova coluna depois de aplicar o javascript
+    */
+
 header, footer, main, div {
     padding: 1.2rem;
     }
@@ -107,9 +111,8 @@ header, footer, main, div {
         flex-direction: column;
         align-items: space-between;
         text-align: left;
-        justify-content: flex-start; 
+        justify-content: flex-start;
         width: 50rem;
-        margin-right: 5rem;
         }
     
         .mainText :nth-child(n + 2) {
@@ -118,22 +121,26 @@ header, footer, main, div {
         text-justify: inter-word;
     }
 
-    /*#toggleBar {
+
+    #toggleMenu {
+        grid-area: 'menu';
+    }
+
+    /*aside {
         display: none;
     }*/
 
-    #toggleBar /*active */{
+    .toggleBar /*active */{
         display: flex;
-        background-color: var(--lightgray);
+        background-color: var(--gray);
         border-radius: 32px;
-        margin-left: 5rem 5rem 5rem 10rem;
-        width: 50rem;
-        align-items:center;
+        margin: 2rem;
         justify-content: center;
-        
+        align-items: center;
+        border: 1px solid salmon;
     }
 
-    #toggleBar ul {
+    .toggleBar ul {
         display: flex;
         flex-direction: column;
         justify-content:space-around;
@@ -141,7 +148,7 @@ header, footer, main, div {
         align-items: center;
         list-style-type:none;
     }
-    #toggleBar li {
+    .toggleBar li {
         padding: 0.3rem;
   display: flex;
   height: 4rem;
@@ -153,7 +160,7 @@ header, footer, main, div {
     }
     
 #sideBar { 
-    grid-area: Info; 
+    grid-area: info; 
     } 
   
  #sideBar ul {
