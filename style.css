@@ -100,30 +100,63 @@ header, footer, main, div {
 #mainContent { 
     grid-area: maintext;  
     display: flex;
-    flex-direction: column;
-    text-align: left;
-    justify-content: flex-start;
-    padding-right: 60%;   
-    margin-left: 2rem;
-     }
+    }
 
-    main {
+    .mainText {
         display: flex;
         flex-direction: column;
         align-items: space-between;
-        
-    }
-    main :nth-child(n + 2) {
+        text-align: left;
+        justify-content: flex-start; 
+        width: 50rem;
+        margin-right: 5rem;
+        }
+    
+        .mainText :nth-child(n + 2) {
         margin-top: 0.5rem;
         text-align: justify;
         text-justify: inter-word;
     }
-#sidebar { 
+
+    /*#toggleBar {
+        display: none;
+    }*/
+
+    #toggleBar /*active */{
+        display: flex;
+        background-color: var(--lightgray);
+        border-radius: 32px;
+        margin-left: 5rem 5rem 5rem 10rem;
+        width: 50rem;
+        align-items:center;
+        justify-content: center;
+        
+    }
+
+    #toggleBar ul {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        padding: 1rem 1rem;
+        align-items: center;
+        list-style-type:none;
+    }
+    #toggleBar li {
+        padding: 0.3rem;
+  display: flex;
+  height: 4rem;
+  width: 14rem;
+  background-color:  var(--morning);
+  margin: 2rem;
+  border-radius: 6px;
+    
+    }
+    
+#sideBar { 
     grid-area: Info; 
-    margin-right: 2rem;
     } 
   
- #sidebar ul {
+ #sideBar ul {
   display: flex;
   flex-direction: column;
   justify-content:space-evenly;
