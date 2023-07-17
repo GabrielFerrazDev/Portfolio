@@ -124,20 +124,22 @@ header, footer, main, div {
 
     #toggleMenu {
         grid-area: 'menu';
+        display: none;
     }
 
     /*aside {
         display: none;
     }*/
-
+    #toggleMenu.active {
+    display: block;
+    }
     .toggleBar /*active */{
         display: flex;
         background-color: var(--gray);
         border-radius: 32px;
-        margin: 2rem;
+        margin: 0rem 2rem 0rem;
         justify-content: center;
         align-items: center;
-        border: 1px solid salmon;
     }
 
     .toggleBar ul {
