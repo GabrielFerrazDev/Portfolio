@@ -50,7 +50,7 @@ body {
       "maintext info"
       "menu info"
       "footer footer";
-    grid-template-rows: 30% 1fr 1fr 1fr;  
+    grid-template-rows: 30% 1fr 1fr 10%;  
     grid-template-columns: 1fr 20%;
     min-height: 100vh;
     background: var(--afternoon);
@@ -329,8 +329,9 @@ footer {
   justify-content:center;
   align-items: center;
   text-align: center;
-  background-color: var(--marine); 
-  position: fixed; bottom: 0; left: 0;
+  background: var(--marine); 
+  position:relative;
+    bottom: 0; right: 0; left: 0;
   width: 100%;
   }
  footer a {
@@ -356,15 +357,14 @@ footer {
        display: table-cell;
     }
 
-
 #pageFooter {
     position:relative;
     bottom: 0; right: 0; left: 0;
  }
-}
-
-#toggleMenu.active {
+ #toggleMenu.active {
     display:flex;
     justify-content: center;
     align-items: center;
 }
+}
+
