@@ -235,11 +235,11 @@ footer {
     padding: 1em;
     } 
   #sideBar div {
-    width: 80%;
+    width: 70%;
     align-self: center;
     justify-content: center;
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: center;
+    
   }
  #sideBar ul {
   display: flex;
