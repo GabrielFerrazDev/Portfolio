@@ -125,11 +125,11 @@ footer {
         position:absolute;
         top: 75%;
         left:1rem;
-        transition:top, opacity 0.;
+        background: linear-gradient(transparent, var(--morning), transparent);
         opacity: 0;
-        transition-duration: 0.4s;
-        transition-timing-function: ease;
-        background: linear-gradient(transparent, var(--morning), transparent)
+        transition:top, opacity;
+        transition: 0.4s ease;
+        
     }
 
     .mainText:hover:after {
@@ -252,7 +252,15 @@ footer {
   background: var(--morning);
   margin: 0.5rem;
   border-radius: 6px;
+  transition:top, opacity, background;
+  transition: 0.3s ease-out;   
 }
+.links li:hover{
+    background: var(--afternoon);
+    opacity: calc(0.8);
+    transform: scale(1.1);  
+   } 
+
 .links img {
     display: flex;
     float: left;
@@ -265,12 +273,6 @@ footer {
     color: var(--marine);
    }
 
-.links li:hover{
-    background: var(--afternoon);
-    opacity: calc(0.8);
-    transform: scale(1.1);
-    transition: 0.2s ease-in;  
-   } 
 
    .projects {
     display: flex;
@@ -365,7 +367,8 @@ footer {
 nav p {
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 #pageFooter {
