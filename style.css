@@ -356,6 +356,17 @@ footer {
     body {
        display: table-cell;
     }
+.mainText {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+nav p {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 #pageFooter {
     position:relative;
