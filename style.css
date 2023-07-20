@@ -109,7 +109,7 @@ footer {
         align-items: space-between;
         text-align: left;
         justify-content: flex-start;
-        width: 90%;
+        width: 50%;
         }
     
         .mainText :nth-child(n + 2) {
