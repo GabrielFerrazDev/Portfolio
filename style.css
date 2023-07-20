@@ -234,7 +234,13 @@ footer {
     text-justify: inter-word;
     padding: 1em;
     } 
-  
+  #sideBar div {
+    width: 80%;
+    align-self: center;
+    justify-content: center;
+    text-align: justify;
+    text-justify: inter-word;
+  }
  #sideBar ul {
   display: flex;
   flex-direction: column;
@@ -363,12 +369,6 @@ footer {
     align-items: center;
     text-align: center;
     width: 100%;
-}
-nav p {
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    text-justify: inter-word;
 }
 
 #pageFooter {
