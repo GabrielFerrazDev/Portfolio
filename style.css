@@ -81,20 +81,22 @@ footer {
         height: 210px;
         width: 210px;
         border-radius: 50%;
-        background-color: var(--morning);
+        background-color:var(--morning);
+        border: 1px solid var(--marine);
     }
     
     header img {
         border-radius: 50%;
-        height: 160px;
-        width: 320px;
+        height: 200px;
+        width: 200px;
         align-self: center;
+        transition: scale, 0.2s linear;
     }
 
     header img:hover {
         
         transform: scale(1.1);
-        transition: 0.2s linear;
+        
     }
  
 #mainContent { 
@@ -173,6 +175,7 @@ footer {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        border: 5px solid var(--marine);
     }
     .toggleBar li {
     display: flex;
@@ -256,10 +259,11 @@ footer {
   height: 2rem;
   width: 7rem;
   background: var(--morning);
+  border: 1px solid var(--marine);
   margin: 0.5rem;
   border-radius: 6px;
   transition:top, opacity, background;
-  transition: 0.3s ease-out;   
+  transition: 0.2s ease-out;   
 }
 .links li:hover{
     background: var(--afternoon);
@@ -326,8 +330,24 @@ footer {
 #menuButton{
     width: 9.6rem;
     height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: var(--morning);
     border-radius: 8px;
+    color: var(--marine);
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid var(--marine) ;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  scale: calc(1.2);
 }
 
 #pageFooter {
@@ -350,6 +370,8 @@ footer {
   color: var(--morning);
   transition: 0.2s linear;
  }
+
+ /*-------------------RESPONSIVE CODE BELOW-----------------------*/
 
  @media (max-width: 768px) {
     :root {
