@@ -357,10 +357,8 @@ footer {
   align-items: center;
   text-align: center;
   background: var(--marine); 
-  position:relative;
-  bottom: 0;
-  width: 100%;  
-  }
+  margin-top: auto;      
+   }
  footer a {
   color: var(--white);
  }
