@@ -82,7 +82,6 @@ footer {
         width: 210px;
         border-radius: 50%;
         background-color:var(--morning);
-        border: 1px solid var(--marine);
     }
     
     header img {
@@ -175,7 +174,7 @@ footer {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        border: 5px solid var(--marine);
+        border: 2px solid var(--marine);
     }
     .toggleBar li {
     display: flex;
