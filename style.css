@@ -51,11 +51,9 @@ body {
       "menu info"
       "footer footer";
     grid-template-rows: 30% 1fr 1fr 10%;  
-    grid-template-columns: 1fr 20%;
-    min-height: 100vh;
-    background: var(--afternoon);
-    background: linear-gradient(203deg, var(--afternoon) 10%, var(--evening) 50%, var(--night) 80%);
-    overflow-y: auto;
+    grid-template-columns: 80% 20%;
+    height: 100vh;
+    background: linear-gradient(203deg, var(--afternoon) 10%, var(--evening) 50%, var(--night) 80%) no-repeat top center/cover;
     }  
 
 header, main, nav, aside {
@@ -351,22 +349,18 @@ footer {
 
 #pageFooter {
   grid-area: footer;
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items: center;
-  text-align: center;
+  position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
   background: var(--marine); 
-  margin-top: auto;      
-   }
- footer a {
-  color: var(--white);
- }
+        height: auto;
+        width: 100%;
 
- footer a:hover {
-  color: var(--morning);
-  transition: 0.2s linear;
- }
+display: flex;
+justify-content: center;
+align-items: center;
+   }
 
  /*-------------------RESPONSIVE CODE BELOW-----------------------*/
 
@@ -390,14 +384,15 @@ footer {
     width: 100%;
 }
 
-#pageFooter {
-    position:relative;
-    bottom: 0; right: 0; left: 0;
- }
  #toggleMenu.active {
     display:flex;
     justify-content: center;
     align-items: center;
+}
+
+#pageFooter {
+    position:relative;
+    bottom: 0; right: 0; left: 0;
 }
 }
 
