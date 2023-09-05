@@ -106,7 +106,7 @@ footer {
     border: 1px solid red;
     margin: 20px auto;
     width:800px;
-    height:400px;
+    height:500px;
     display:grid;
     grid-template-columns: 250px 250px;
     grid-row: auto auto;
@@ -116,11 +116,16 @@ footer {
 }
 
 .menubox {
-    padding:20px;
     border-radius:10px;
     display:flex;
     align-items:center;
     justify-content:center;
+}
+
+.menubox img {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
 }
 
 #project1 {
