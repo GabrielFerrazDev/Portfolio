@@ -249,14 +249,15 @@ footer {
     border: 1px solid var(--marine) ;
 }
 
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
-  'opsz' 48;
-  scale: calc(1.2);
+  'opsz' 24
 }
+
 
 #pageFooter {
   grid-area: footer;
